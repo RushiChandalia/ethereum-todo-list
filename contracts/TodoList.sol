@@ -1,4 +1,6 @@
-pragma solidity ^0.5.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.6;
+
 
 contract TodoList {
   uint public taskCount = 0;
@@ -22,8 +24,8 @@ contract TodoList {
     bool completed
   );
 
-  constructor() public {
-    createTask("Check out dappuniversity.com");
+  constructor() {
+    createTask("first task");
   }
 
   function createTask(string memory _content) public {
